@@ -1,6 +1,6 @@
 # flutterwithsql
 
-A new Flutter project.
+A Flutter project to link sqlite as Database.
 
 ## Getting Started
 
