@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -12,6 +13,49 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    TextEditingController textEditingController = TextEditingController();
+    return Scaffold(
+      appBar: AppBar(
+        title: AutoSizeText('Flutter With Sqlite'),
+      ),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextFormField(
+                  controller: textEditingController,
+                  style: TextStyle(
+                    color: Colors.blue,
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    MaterialButton(
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                      onPressed: () {},
+                      child: AutoSizeText('Save'),
+                    ),
+                    MaterialButton(
+                      color: Colors.blue,
+                      textColor: Colors.white,
+                      onPressed: () {},
+                      child: AutoSizeText('Dle'),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
