@@ -25,10 +25,37 @@ class _HomeState extends State<Home> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextFormField(
-                  controller: textEditingController,
-                  style: TextStyle(
-                    color: Colors.blue,
+                SizedBox(
+                  height: 70,
+                  child: TextFormField(
+                    controller: textEditingController,
+                    decoration: InputDecoration(hintText: 'Firstname'),
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 70,
+                  child: TextFormField(
+                    controller: textEditingController,
+                    decoration: InputDecoration(hintText: 'Surname'),
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 70,
+                  child: TextFormField(
+                    controller: textEditingController,
+                    decoration: InputDecoration(hintText: 'Age'),
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -47,7 +74,7 @@ class _HomeState extends State<Home> {
                       color: Colors.blue,
                       textColor: Colors.white,
                       onPressed: () {},
-                      child: AutoSizeText('Dle'),
+                      child: AutoSizeText('Cancel'),
                     ),
                   ],
                 )
