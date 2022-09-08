@@ -18,11 +18,10 @@ class Employee {
 
 
 //Converts map data into values
-  Employee.fromMap(Map<String, dynamic> map)
+  Employee.fromMap(Map<dynamic, dynamic> map)
       : id = map['id'],
         age = map['age'],
         firstname = map['firstname'],
         surname = map['surname'];
-
 
 }
